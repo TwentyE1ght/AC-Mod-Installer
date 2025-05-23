@@ -1,13 +1,13 @@
 # ninja log v6
-9	3007	7697337166718592	CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj	849deaaaaebf247d
-2	1796	7697343010387800	build.ninja	e6662139f8757492
+9	2741	7697379495429564	CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj	90cab2067c186555
+21	1907	7697415810191783	build.ninja	e6662139f8757492
 8376	11206	7697296683059399	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/dateutil.cpp.obj	317d3b52ad379881
 42	2158	7697296599713919	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitabstractarchiveopener.cpp.obj	33d7dfb75971b6a8
 13840	13913	7697296737698461	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/windows.cpp.obj	95f315c63d7fb0ed
-3007	4076	7697337196701249	AC_Mod_Installer.exe	53700bc58a13bdfe
-38	2174	7697296599673915	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitabstractarchivehandler.cpp.obj	e27f517185a8c289
+2742	3741	7697379522762108	AC_Mod_Installer.exe	53700bc58a13bdfe
 68	3250	7697296599976031	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchivewriter.cpp.obj	d3267b099baf209
 9088	11048	7697296690174949	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/failuresourcecategory.cpp.obj	7ce512f7fc12fbab
+38	2174	7697296599673915	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitabstractarchivehandler.cpp.obj	e27f517185a8c289
 2158	2559	7697296620886961	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/biterror.cpp.obj	1a157c1f73fab013
 54	2359	7697296599834188	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchiveiteminfo.cpp.obj	62d561b165e04d29
 13583	15990	7697296735117357	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/stringutil.cpp.obj	2018644da83b069c
@@ -61,18 +61,3 @@
 10345	13900	7697296702747915	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/fsutil.cpp.obj	33d72e8b8db46504
 13264	15357	7697296731930320	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/streamextractcallback.cpp.obj	14b94cda7a119b56
 12702	15515	7697296726312689	extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/renameditem.cpp.obj	2f80e64357918a61
-21	1907	7697343010387800	build.ninja	e6662139f8757492
-24	2844	7697343011377581	CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj	90cab2067c186555
-2845	3927	7697343039587571	AC_Mod_Installer.exe	53700bc58a13bdfe
-7	3090	7697345732245576	CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj	90cab2067c186555
-3091	4152	7697345763080635	AC_Mod_Installer.exe	53700bc58a13bdfe
-9	2683	7697362396038550	CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj	90cab2067c186555
-2684	3691	7697362422783359	AC_Mod_Installer.exe	53700bc58a13bdfe
-54	2702	7697371452528270	CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj	90cab2067c186555
-2703	3897	7697371479018878	AC_Mod_Installer.exe	53700bc58a13bdfe
-11	2761	7697373520431627	CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj	90cab2067c186555
-2762	3803	7697373547952183	AC_Mod_Installer.exe	53700bc58a13bdfe
-8	2742	7697377822667750	CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj	90cab2067c186555
-2743	3732	7697377850022634	AC_Mod_Installer.exe	53700bc58a13bdfe
-9	2741	7697379495429564	CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj	90cab2067c186555
-2742	3741	7697379522762108	AC_Mod_Installer.exe	53700bc58a13bdfe

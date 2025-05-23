@@ -1,8 +1,8 @@
 #include <iostream>
 #include <filesystem>
 #include <windows.h>
-#include "backup.h"
-#include "checks.h"
+#include "checks.hpp"
+#include "menu.hpp"
 
 namespace fs = std::filesystem;
 
@@ -14,8 +14,7 @@ int main() {
         if (checkRoot(assettoRoot)) {
             std::cout << "'" << assettoRoot << "' Found!" << std::endl;
             const fs::path assettoRootFolder = assettoRoot;
-
-            backupRootDialog(assettoRootFolder);
+            mainMenu(assettoRoot);
             break;
         }
         Sleep(500);

@@ -22,7 +22,7 @@ C:\Users\kwaku\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCM
 -- CPM: Adding package 7-zip@23.01 (v23.01)
 -- Populating 7-zip
 -- Configuring done (0.1s)
--- Generating done (0.1s)
+-- Generating done (0.0s)
 -- Build files have been written to: C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild
 [0/7] Performing update step for '7-zip-populate'
 -- Already at requested tag: v23.01
@@ -48,6 +48,6 @@ C:\Users\kwaku\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCM
 [7/7] Completed 'ghc_filesystem-populate'
 -- ghc::filesystem source code available at C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src
 -- Enable sanitizers: OFF
--- Configuring done (2.0s)
+-- Configuring done (1.9s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug

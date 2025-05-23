@@ -821,3 +821,39 @@ events:
       variable: "run_result_unused"
       cached: true
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "extlibs/bit7z/cmake/TargetArchDetect.cmake:26 (try_run)"
+      - "extlibs/bit7z/cmake/OutputOptions.cmake:20 (include)"
+      - "extlibs/bit7z/CMakeLists.txt:165 (include)"
+    directories:
+      source: "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): C:/Users/kwaku/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_5eda3
+        [1/2] C:\\Users\\kwaku\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\g++.exe   -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_5eda3.dir/arch_check.cpp.obj -c C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/arch_check.cpp
+        FAILED: CMakeFiles/cmTC_5eda3.dir/arch_check.cpp.obj 
+        C:\\Users\\kwaku\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\g++.exe   -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_5eda3.dir/arch_check.cpp.obj -c C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/arch_check.cpp
+        C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/arch_check.cpp:8:13: error: #error CMAKE_TARGET_ARCH_x64
+            8 |         #   error CMAKE_TARGET_ARCH_x64
+              |             ^~~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+...
