@@ -22,7 +22,7 @@ bool checkRoot(std::string path) {
         if (!exists(acExePath)) {
             throw std::invalid_argument("is not a root folder or does not exist.");
         }
-        double totalSize = getRootSize(path);
+        double totalSize = getRootSize(acRoot);
         double totalSizeGB = totalSize / (1024 * 1024 * 1024);
         std::cout << "Total size: " << std::fixed << std::setprecision(1) << totalSizeGB << " GB" << std::endl;
         Sleep(500);

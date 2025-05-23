@@ -4,6 +4,12 @@
     <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\src\checks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\src\menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bit7z.hpp">

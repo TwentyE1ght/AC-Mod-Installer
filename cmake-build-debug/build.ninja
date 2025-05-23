@@ -56,6 +56,20 @@ build CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj: CXX_COMPILER__AC_Mod_Ins
   OBJECT_DIR = CMakeFiles\AC_Mod_Installer.dir
   OBJECT_FILE_DIR = CMakeFiles\AC_Mod_Installer.dir\src
 
+build CMakeFiles/AC_Mod_Installer.dir/src/checks.cpp.obj: CXX_COMPILER__AC_Mod_Installer_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/src/checks.cpp || cmake_object_order_depends_target_AC_Mod_Installer
+  DEP_FILE = CMakeFiles\AC_Mod_Installer.dir\src\checks.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -Wa,-mbig-obj
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/src -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include
+  OBJECT_DIR = CMakeFiles\AC_Mod_Installer.dir
+  OBJECT_FILE_DIR = CMakeFiles\AC_Mod_Installer.dir\src
+
+build CMakeFiles/AC_Mod_Installer.dir/src/menu.cpp.obj: CXX_COMPILER__AC_Mod_Installer_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/src/menu.cpp || cmake_object_order_depends_target_AC_Mod_Installer
+  DEP_FILE = CMakeFiles\AC_Mod_Installer.dir\src\menu.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -Wa,-mbig-obj
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/src -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include
+  OBJECT_DIR = CMakeFiles\AC_Mod_Installer.dir
+  OBJECT_FILE_DIR = CMakeFiles\AC_Mod_Installer.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target AC_Mod_Installer
@@ -64,7 +78,7 @@ build CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj: CXX_COMPILER__AC_Mod_Ins
 #############################################
 # Link the executable AC_Mod_Installer.exe
 
-build AC_Mod_Installer.exe: CXX_EXECUTABLE_LINKER__AC_Mod_Installer_Debug CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj | C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/lib/x64/libbit7z64_d.a || C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/lib/x64/libbit7z64_d.a
+build AC_Mod_Installer.exe: CXX_EXECUTABLE_LINKER__AC_Mod_Installer_Debug CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj CMakeFiles/AC_Mod_Installer.dir/src/checks.cpp.obj CMakeFiles/AC_Mod_Installer.dir/src/menu.cpp.obj | C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/lib/x64/libbit7z64_d.a || C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/lib/x64/libbit7z64_d.a
   FLAGS = -g
   LINK_LIBRARIES = C:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/lib/x64/libbit7z64_d.a  -loleaut32  -luuid  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\AC_Mod_Installer.dir

@@ -180,6 +180,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\src\main.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\src\checks.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\src\menu.cpp" />
     <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bit7z.hpp" />
     <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bit7zlibrary.hpp" />
     <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitabstractarchivecreator.hpp" />
