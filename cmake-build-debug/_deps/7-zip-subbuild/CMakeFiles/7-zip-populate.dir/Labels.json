@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild/CMakeFiles/7-zip-populate"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild/CMakeFiles/7-zip-populate.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild/CMakeFiles/7-zip-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/7-zip-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/7-zip-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/7-zip-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/7-zip-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/7-zip-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/7-zip-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/7-zip-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/7-zip-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"7-zip-populate"
+		],
+		"name" : "7-zip-populate"
+	}
+}

@@ -1,0 +1,20 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject/shared_internal_commands.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent/CMakeLists.cmake.in
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/arch_check.cpp
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/cmake/CPM_0.40.2.cmake
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/CMakeLists.txt
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/BuildOptions.cmake
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/CompilerOptions.cmake
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/Dependencies.cmake
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/FilesystemDetect.cmake
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/OutputOptions.cmake
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/Sanitizers.cmake
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/TargetArchDetect.cmake

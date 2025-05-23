@@ -1,0 +1,15 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=git
+command=C:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild/ghc_filesystem-populate-prefix/tmp/ghc_filesystem-populate-gitclone.cmake
+source_dir=C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src
+work_dir=C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps
+repository=https://github.com/rikyoz/filesystem.git
+remote=origin
+init_submodules=TRUE
+recurse_submodules=--recursive
+submodules=
+CMP0097=NEW
+      

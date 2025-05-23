@@ -1,0 +1,150 @@
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKEFILES\0A1AE7E71C2A388EDAEBFDE2AFC5C804\7-ZIP-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/7-zip-populate-prefix/tmp/7-zip-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/Debug/7-zip-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKEFILES\0A1AE7E71C2A388EDAEBFDE2AFC5C804\7-ZIP-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/7-zip-populate-prefix/tmp/7-zip-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/Debug/7-zip-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKEFILES\0A1AE7E71C2A388EDAEBFDE2AFC5C804\7-ZIP-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/7-zip-populate-prefix/tmp/7-zip-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKEFILES\0A1AE7E71C2A388EDAEBFDE2AFC5C804\7-ZIP-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/Debug/7-zip-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKEFILES\0A1AE7E71C2A388EDAEBFDE2AFC5C804\7-ZIP-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/Debug/7-zip-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKEFILES\0A1AE7E71C2A388EDAEBFDE2AFC5C804\7-ZIP-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/Debug/7-zip-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKEFILES\0A1AE7E71C2A388EDAEBFDE2AFC5C804\7-ZIP-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/Debug/7-zip-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKEFILES\0A1AE7E71C2A388EDAEBFDE2AFC5C804\7-ZIP-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/Debug/7-zip-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKEFILES\D77783274B3CDA76E839972824C7EF70\7-ZIP-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/Debug/7-zip-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/7-zip-populate-prefix/src/7-zip-populate-stamp/Debug/7-zip-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKEFILES\69021B8EF46D3B75C3040E92D43B9264\7-ZIP-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild -BC:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild --check-stamp-file C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

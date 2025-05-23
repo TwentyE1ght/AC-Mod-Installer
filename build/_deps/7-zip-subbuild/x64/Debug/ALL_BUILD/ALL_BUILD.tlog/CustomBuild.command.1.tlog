@@ -1,0 +1,10 @@
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild -BC:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild --check-stamp-file C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

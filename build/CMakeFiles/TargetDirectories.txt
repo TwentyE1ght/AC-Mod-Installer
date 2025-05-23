@@ -1,0 +1,5 @@
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/CMakeFiles/AC_Mod_Installer.dir
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/extlibs/bit7z/CMakeFiles/bit7z.dir
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/extlibs/bit7z/CMakeFiles/ALL_BUILD.dir

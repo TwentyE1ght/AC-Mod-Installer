@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeFiles\0a1ae7e71c2a388edaebfde2afc5c804\7-zip-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeFiles\0a1ae7e71c2a388edaebfde2afc5c804\7-zip-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeFiles\0a1ae7e71c2a388edaebfde2afc5c804\7-zip-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeFiles\0a1ae7e71c2a388edaebfde2afc5c804\7-zip-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeFiles\0a1ae7e71c2a388edaebfde2afc5c804\7-zip-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeFiles\0a1ae7e71c2a388edaebfde2afc5c804\7-zip-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeFiles\0a1ae7e71c2a388edaebfde2afc5c804\7-zip-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeFiles\0a1ae7e71c2a388edaebfde2afc5c804\7-zip-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeFiles\d77783274b3cda76e839972824c7ef70\7-zip-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeFiles\69021b8ef46d3b75c3040e92d43b9264\7-zip-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeFiles\7-zip-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5608A2D1-B3D5-3329-BC95-035D7CA8A8F3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

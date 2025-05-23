@@ -1,0 +1,10 @@
+^C:\USERS\KWAKU\CLIONPROJECTS\AC-MOD-INSTALLER\BUILD\_DEPS\7-ZIP-SUBBUILD\CMAKEFILES\69021B8EF46D3B75C3040E92D43B9264\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild -BC:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/7-zip-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BD812C25-D71C-3080-BC8D-E83B20B28EA8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>bit7z</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\lib\x64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bit7z.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bit7z</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\lib\x64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bit7z.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bit7z</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-src/CPP" /w14640 /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14826 /w14905 /w14906 /w14928 /Zc:strictStrings /Zc:throwingNew /Zc:referenceBinding /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>12</ProcessorNumber>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4289</TreatSpecificWarningsAsErrors>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;_UNICODE;WIN64;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\lib\x64\Debug\bit7z.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;WIN64;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-src\CPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-src\CPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /nologo</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-src/CPP" /w14640 /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14826 /w14905 /w14906 /w14928 /Zc:strictStrings /Zc:throwingNew /Zc:referenceBinding /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>12</ProcessorNumber>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4289</TreatSpecificWarningsAsErrors>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;WIN64;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;WIN64;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-src\CPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-src\CPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /nologo</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kwaku/CLionProjects/AC-Mod-Installer -BC:/Users/kwaku/CLionProjects/AC-Mod-Installer/build --check-stamp-file C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/extlibs/bit7z/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\arch_check.cpp;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\cmake\CPM_0.40.2.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\BuildOptions.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\CompilerOptions.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\Dependencies.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\FilesystemDetect.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\OutputOptions.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\Sanitizers.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\TargetArchDetect.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\extlibs\bit7z\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kwaku/CLionProjects/AC-Mod-Installer -BC:/Users/kwaku/CLionProjects/AC-Mod-Installer/build --check-stamp-file C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/extlibs/bit7z/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\arch_check.cpp;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\cmake\CPM_0.40.2.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\BuildOptions.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\CompilerOptions.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\Dependencies.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\FilesystemDetect.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\OutputOptions.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\Sanitizers.cmake;C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\cmake\TargetArchDetect.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\extlibs\bit7z\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bit7z.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bit7zlibrary.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitabstractarchivecreator.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitabstractarchivehandler.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitabstractarchiveopener.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitarchiveeditor.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitarchiveitem.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitarchiveiteminfo.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitarchiveitemoffset.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitarchivereader.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitarchivewriter.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitcompressionlevel.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitcompressionmethod.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitcompressor.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitdefines.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\biterror.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitexception.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitextractor.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitfilecompressor.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitfileextractor.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitformat.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitfs.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitgenericitem.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitinputarchive.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bititemsvector.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitmemcompressor.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitmemextractor.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitoutputarchive.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitpropvariant.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitstreamcompressor.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitstreamextractor.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bittypes.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitwindows.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\archiveproperties.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\bufferextractcallback.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\bufferitem.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\bufferutil.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\callback.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cbufferinstream.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cbufferoutstream.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cfileinstream.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cfileoutstream.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cfixedbufferoutstream.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cmultivolumeinstream.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cmultivolumeoutstream.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\com.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cstdinstream.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cstdoutstream.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\csymlinkinstream.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cvolumeinstream.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cvolumeoutstream.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\dateutil.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\extractcallback.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\failuresourcecategory.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\fileextractcallback.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\fixedbufferextractcallback.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\formatdetect.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\fsindexer.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\fsitem.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\fsutil.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\fs.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\genericinputitem.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\guiddef.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\guids.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\hresultcategory.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\internalcategory.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\macros.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\opencallback.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\operationcategory.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\operationresult.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\processeditem.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\renameditem.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\stdinputitem.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\streamextractcallback.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\streamutil.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\stringutil.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\updatecallback.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\util.hpp" />
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\windows.hpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bit7zlibrary.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitabstractarchivecreator.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitabstractarchivehandler.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitabstractarchiveopener.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitarchiveeditor.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitarchiveitem.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitarchiveiteminfo.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitarchiveitemoffset.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitarchivereader.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitarchivewriter.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\biterror.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitexception.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitfilecompressor.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitformat.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitinputarchive.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bititemsvector.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitoutputarchive.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bitpropvariant.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\bittypes.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\bufferextractcallback.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\bufferitem.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\bufferutil.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\callback.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cbufferinstream.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cbufferoutstream.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cfileinstream.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cfileoutstream.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cfixedbufferoutstream.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cmultivolumeinstream.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cmultivolumeoutstream.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cstdinstream.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cstdoutstream.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\csymlinkinstream.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cvolumeinstream.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\cvolumeoutstream.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\dateutil.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\extractcallback.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\failuresourcecategory.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\fileextractcallback.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\fixedbufferextractcallback.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\formatdetect.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\fsindexer.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\fsitem.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\fsutil.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\genericinputitem.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\guids.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\hresultcategory.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\internalcategory.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\opencallback.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\operationcategory.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\operationresult.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\processeditem.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\renameditem.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\stdinputitem.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\streamextractcallback.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\stringutil.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\updatecallback.cpp" />
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\src\internal\windows.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\ZERO_CHECK.vcxproj">
+      <Project>{D8F39228-DF7D-30E6-847F-5969987C289F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

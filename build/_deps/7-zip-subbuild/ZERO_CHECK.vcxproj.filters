@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\build\_deps\7-zip-subbuild\CMakeFiles\69021b8ef46d3b75c3040e92d43b9264\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5608A2D1-B3D5-3329-BC95-035D7CA8A8F3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bit7z.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bit7zlibrary.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitabstractarchivecreator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitabstractarchivehandler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitabstractarchiveopener.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitarchiveeditor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitarchiveitem.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitarchiveiteminfo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitarchiveitemoffset.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitarchivereader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitarchivewriter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitcompressionlevel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitcompressionmethod.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitcompressor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitdefines.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\biterror.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitexception.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitextractor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitfilecompressor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitfileextractor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitformat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitfs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitgenericitem.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitinputarchive.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bititemsvector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitmemcompressor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitmemextractor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitoutputarchive.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitpropvariant.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitstreamcompressor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitstreamextractor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bittypes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\include\bit7z\bitwindows.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kwaku\CLionProjects\AC-Mod-Installer\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{60959DDA-6122-32B3-95F5-ABFA8791346C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FC4554BB-5089-3486-B87E-A5BF9434AF7E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

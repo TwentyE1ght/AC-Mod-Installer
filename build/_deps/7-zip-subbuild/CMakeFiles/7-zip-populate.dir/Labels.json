@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/7-zip-populate"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/69021b8ef46d3b75c3040e92d43b9264/7-zip-populate.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/d77783274b3cda76e839972824c7ef70/7-zip-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/0a1ae7e71c2a388edaebfde2afc5c804/7-zip-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/0a1ae7e71c2a388edaebfde2afc5c804/7-zip-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/0a1ae7e71c2a388edaebfde2afc5c804/7-zip-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/0a1ae7e71c2a388edaebfde2afc5c804/7-zip-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/0a1ae7e71c2a388edaebfde2afc5c804/7-zip-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/0a1ae7e71c2a388edaebfde2afc5c804/7-zip-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/0a1ae7e71c2a388edaebfde2afc5c804/7-zip-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/_deps/7-zip-subbuild/CMakeFiles/0a1ae7e71c2a388edaebfde2afc5c804/7-zip-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"7-zip-populate"
+		],
+		"name" : "7-zip-populate"
+	}
+}

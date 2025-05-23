@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/cmake_install.cmake",
+		"C:/Users/kwaku/CLionProjects/AC-Mod-Installer/build/extlibs/bit7z/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

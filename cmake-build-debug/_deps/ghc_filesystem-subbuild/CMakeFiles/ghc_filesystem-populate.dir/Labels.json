@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild/CMakeFiles/ghc_filesystem-populate"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild/CMakeFiles/ghc_filesystem-populate.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild/CMakeFiles/ghc_filesystem-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild/ghc_filesystem-populate-prefix/src/ghc_filesystem-populate-stamp/ghc_filesystem-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild/ghc_filesystem-populate-prefix/src/ghc_filesystem-populate-stamp/ghc_filesystem-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild/ghc_filesystem-populate-prefix/src/ghc_filesystem-populate-stamp/ghc_filesystem-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild/ghc_filesystem-populate-prefix/src/ghc_filesystem-populate-stamp/ghc_filesystem-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild/ghc_filesystem-populate-prefix/src/ghc_filesystem-populate-stamp/ghc_filesystem-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild/ghc_filesystem-populate-prefix/src/ghc_filesystem-populate-stamp/ghc_filesystem-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild/ghc_filesystem-populate-prefix/src/ghc_filesystem-populate-stamp/ghc_filesystem-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild/ghc_filesystem-populate-prefix/src/ghc_filesystem-populate-stamp/ghc_filesystem-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ghc_filesystem-populate"
+		],
+		"name" : "ghc_filesystem-populate"
+	}
+}
