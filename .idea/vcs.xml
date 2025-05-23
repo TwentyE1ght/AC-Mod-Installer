@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/_deps/7-zip-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/extlibs/bit7z" vcs="Git" />
   </component>
 </project>

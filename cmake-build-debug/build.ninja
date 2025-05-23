@@ -47,12 +47,12 @@ cmake_ninja_workdir = C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build
 #############################################
 # Order-only phony target for AC_Mod_Installer
 
-build cmake_object_order_depends_target_AC_Mod_Installer: phony || .
+build cmake_object_order_depends_target_AC_Mod_Installer: phony || cmake_object_order_depends_target_bit7z64
 
 build CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj: CXX_COMPILER__AC_Mod_Installer_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/src/main.cpp || cmake_object_order_depends_target_AC_Mod_Installer
   DEP_FILE = CMakeFiles\AC_Mod_Installer.dir\src\main.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -Wa,-mbig-obj
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/src -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include
   OBJECT_DIR = CMakeFiles\AC_Mod_Installer.dir
   OBJECT_FILE_DIR = CMakeFiles\AC_Mod_Installer.dir\src
 
@@ -64,9 +64,9 @@ build CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj: CXX_COMPILER__AC_Mod_Ins
 #############################################
 # Link the executable AC_Mod_Installer.exe
 
-build AC_Mod_Installer.exe: CXX_EXECUTABLE_LINKER__AC_Mod_Installer_Debug CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj
+build AC_Mod_Installer.exe: CXX_EXECUTABLE_LINKER__AC_Mod_Installer_Debug CMakeFiles/AC_Mod_Installer.dir/src/main.cpp.obj | C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/lib/x64/libbit7z64_d.a || C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/lib/x64/libbit7z64_d.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/lib/x64/libbit7z64_d.a  -loleaut32  -luuid  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\AC_Mod_Installer.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -102,6 +102,495 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # C:/Users/kwaku/CLionProjects/AC-Mod-Installer/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target bit7z64
+
+
+#############################################
+# Order-only phony target for bit7z64
+
+build cmake_object_order_depends_target_bit7z64: phony || .
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bit7zlibrary.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bit7zlibrary.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bit7zlibrary.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitabstractarchivecreator.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitabstractarchivecreator.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitabstractarchivecreator.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitabstractarchivehandler.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitabstractarchivehandler.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitabstractarchivehandler.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitabstractarchiveopener.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitabstractarchiveopener.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitabstractarchiveopener.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchiveeditor.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitarchiveeditor.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitarchiveeditor.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchiveitem.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitarchiveitem.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitarchiveitem.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchiveiteminfo.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitarchiveiteminfo.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitarchiveiteminfo.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchiveitemoffset.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitarchiveitemoffset.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitarchiveitemoffset.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchivereader.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitarchivereader.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitarchivereader.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchivewriter.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitarchivewriter.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitarchivewriter.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/biterror.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/biterror.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\biterror.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitexception.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitexception.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitexception.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitfilecompressor.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitfilecompressor.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitfilecompressor.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitformat.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitformat.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitformat.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitinputarchive.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitinputarchive.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitinputarchive.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bititemsvector.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bititemsvector.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bititemsvector.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitoutputarchive.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitoutputarchive.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitoutputarchive.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitpropvariant.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bitpropvariant.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bitpropvariant.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bittypes.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/bittypes.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\bittypes.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/bufferextractcallback.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/bufferextractcallback.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\bufferextractcallback.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/bufferitem.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/bufferitem.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\bufferitem.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/bufferutil.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/bufferutil.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\bufferutil.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/callback.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/callback.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\callback.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cbufferinstream.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/cbufferinstream.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\cbufferinstream.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cbufferoutstream.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/cbufferoutstream.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\cbufferoutstream.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cfileinstream.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/cfileinstream.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\cfileinstream.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cfileoutstream.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/cfileoutstream.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\cfileoutstream.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cfixedbufferoutstream.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/cfixedbufferoutstream.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\cfixedbufferoutstream.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cmultivolumeinstream.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/cmultivolumeinstream.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\cmultivolumeinstream.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cmultivolumeoutstream.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/cmultivolumeoutstream.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\cmultivolumeoutstream.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cstdinstream.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/cstdinstream.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\cstdinstream.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cstdoutstream.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/cstdoutstream.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\cstdoutstream.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/csymlinkinstream.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/csymlinkinstream.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\csymlinkinstream.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cvolumeinstream.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/cvolumeinstream.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\cvolumeinstream.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cvolumeoutstream.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/cvolumeoutstream.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\cvolumeoutstream.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/dateutil.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/dateutil.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\dateutil.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/extractcallback.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/extractcallback.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\extractcallback.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/failuresourcecategory.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/failuresourcecategory.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\failuresourcecategory.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/fileextractcallback.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/fileextractcallback.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\fileextractcallback.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/fixedbufferextractcallback.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/fixedbufferextractcallback.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\fixedbufferextractcallback.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/formatdetect.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/formatdetect.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\formatdetect.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/fsindexer.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/fsindexer.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\fsindexer.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/fsitem.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/fsitem.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\fsitem.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/fsutil.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/fsutil.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\fsutil.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/genericinputitem.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/genericinputitem.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\genericinputitem.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/guids.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/guids.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\guids.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/hresultcategory.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/hresultcategory.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\hresultcategory.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/internalcategory.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/internalcategory.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\internalcategory.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/opencallback.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/opencallback.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\opencallback.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/operationcategory.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/operationcategory.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\operationcategory.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/operationresult.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/operationresult.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\operationresult.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/processeditem.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/processeditem.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\processeditem.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/renameditem.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/renameditem.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\renameditem.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/stdinputitem.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/stdinputitem.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\stdinputitem.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/streamextractcallback.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/streamextractcallback.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\streamextractcallback.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/stringutil.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/stringutil.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\stringutil.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/updatecallback.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/updatecallback.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\updatecallback.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+build extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/windows.cpp.obj: CXX_COMPILER__bit7z64_unscanned_Debug C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src/internal/windows.cpp || cmake_object_order_depends_target_bit7z64
+  DEFINES = -DUNICODE -DWIN64 -D_UNICODE -D_WINDOWS
+  DEP_FILE = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal\windows.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wsign-conversion -Wshadow -Wcast-align -Wunused -Woverloaded-virtual -Wformat=2 -Wdouble-promotion -Wlogical-op -Wa,-mbig-obj -Wno-error=non-virtual-dtor -Wno-cast-function-type -Wno-misleading-indentation -Wduplicated-cond -Wnull-dereference -Wduplicated-branches -Wrestrict
+  INCLUDES = -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/include/bit7z -IC:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/src -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src/CPP -isystem C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src/include
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  OBJECT_FILE_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir\src\internal
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target bit7z64
+
+
+#############################################
+# Link the static library C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\lib\x64\libbit7z64_d.a
+
+build C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/lib/x64/libbit7z64_d.a: CXX_STATIC_LIBRARY_LINKER__bit7z64_Debug extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bit7zlibrary.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitabstractarchivecreator.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitabstractarchivehandler.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitabstractarchiveopener.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchiveeditor.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchiveitem.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchiveiteminfo.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchiveitemoffset.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchivereader.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitarchivewriter.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/biterror.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitexception.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitfilecompressor.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitformat.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitinputarchive.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bititemsvector.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitoutputarchive.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bitpropvariant.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/bittypes.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/bufferextractcallback.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/bufferitem.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/bufferutil.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/callback.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cbufferinstream.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cbufferoutstream.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cfileinstream.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cfileoutstream.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cfixedbufferoutstream.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cmultivolumeinstream.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cmultivolumeoutstream.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cstdinstream.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cstdoutstream.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/csymlinkinstream.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cvolumeinstream.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/cvolumeoutstream.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/dateutil.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/extractcallback.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/failuresourcecategory.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/fileextractcallback.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/fixedbufferextractcallback.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/formatdetect.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/fsindexer.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/fsitem.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/fsutil.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/genericinputitem.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/guids.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/hresultcategory.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/internalcategory.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/opencallback.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/operationcategory.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/operationresult.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/processeditem.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/renameditem.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/stdinputitem.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/streamextractcallback.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/stringutil.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/updatecallback.cpp.obj extlibs/bit7z/CMakeFiles/bit7z64.dir/src/internal/windows.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = extlibs\bit7z\CMakeFiles\bit7z64.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = C:\Users\kwaku\CLionProjects\AC-Mod-Installer\extlibs\bit7z\lib\x64\libbit7z64_d.a
+  TARGET_PDB = bit7z64_d.a.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -130,6 +619,10 @@ build extlibs/bit7z/rebuild_cache: phony extlibs/bit7z/CMakeFiles/rebuild_cache.
 
 build AC_Mod_Installer: phony AC_Mod_Installer.exe
 
+build bit7z64: phony C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/lib/x64/libbit7z64_d.a
+
+build libbit7z64_d.a: phony C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/lib/x64/libbit7z64_d.a
+
 # =============================================================================
 # Folder targets.
 
@@ -145,7 +638,7 @@ build all: phony AC_Mod_Installer.exe extlibs/bit7z/all
 #############################################
 # Folder: C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/extlibs/bit7z
 
-build extlibs/bit7z/all: phony
+build extlibs/bit7z/all: phony C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/lib/x64/libbit7z64_d.a
 
 # =============================================================================
 # Built-in targets
@@ -154,14 +647,14 @@ build extlibs/bit7z/all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/CMakeLists.txt C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent/CMakeLists.cmake.in C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FindGit.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/CMakeLists.txt C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/CMakeLists.txt C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/BuildOptions.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/CompilerOptions.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/Dependencies.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/FilesystemDetect.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/OutputOptions.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/Sanitizers.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/TargetArchDetect.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake arch_check.cpp cmake/CPM_0.40.2.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/CMakeLists.txt C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
+build C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent/CMakeLists.cmake.in C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FindGit.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/Users/kwaku/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/CMakeLists.txt C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/CMakeLists.txt C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/BuildOptions.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/CompilerOptions.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/Dependencies.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/FilesystemDetect.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/OutputOptions.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/Sanitizers.cmake C$:/Users/kwaku/CLionProjects/AC-Mod-Installer/extlibs/bit7z/cmake/TargetArchDetect.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake arch_check.cpp cmake/CPM_0.40.2.cmake: phony
 
 
 #############################################

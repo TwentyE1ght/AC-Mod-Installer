@@ -1,5 +1,6 @@
 C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/CMakeFiles/AC_Mod_Installer.dir
 C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/extlibs/bit7z/CMakeFiles/bit7z64.dir
 C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/extlibs/bit7z/CMakeFiles/edit_cache.dir
 C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/extlibs/bit7z/CMakeFiles/rebuild_cache.dir

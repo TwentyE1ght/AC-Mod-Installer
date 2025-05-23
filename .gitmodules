@@ -1,0 +1,6 @@
+[submodule "extlibs/bit7z"]
+	path = extlibs/bit7z
+	url = https://github.com/rikyoz/bit7z.git
+[submodule "extlibs/progressbar"]
+	path = extlibs/progressbar
+	url = https://github.com/gipert/progressbar.git

@@ -1,5 +1,53 @@
 C:\Users\kwaku\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/kwaku/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S C:\Users\kwaku\CLionProjects\AC-Mod-Installer -B C:\Users\kwaku\CLionProjects\AC-Mod-Installer\cmake-build-debug
--- Configuring done (0.2s)
-CMake Error: CMake can not determine linker language for target: bit7z
--- Generating done (0.0s)
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Standard filesystem: NO (using ghc::filesystem)
+-- Target Version: 
+-- Compiler ID: GNU
+-- Compiler Version: 13.1.0
+-- Architecture: x64
+-- Build Type: Debug
+-- Language Standard for bit7z: C++14
+-- Auto format detection: OFF
+-- Regex matching extraction: OFF
+-- Use std::byte: OFF
+-- Use native string: OFF
+-- Generate Position Independent Code: OFF
+-- Disable Zip ASCII password check: OFF
+-- Disable using std::filesystem: OFF
+-- 7-zip version: 23.01
+-- Build tests: OFF
+-- Build docs: OFF
+-- Auto prefix long paths: OFF
+-- Use the default codepage: OFF
+-- Path sanitization: OFF
+-- CPM: Adding package 7-zip@23.01 (v23.01)
+-- Populating 7-zip
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-subbuild
+[0/7] Performing update step for '7-zip-populate'
+-- Already at requested tag: v23.01
+[1/7] No patch step for '7-zip-populate'
+[3/7] No configure step for '7-zip-populate'
+[4/7] No build step for '7-zip-populate'
+[5/7] No install step for '7-zip-populate'
+[6/7] No test step for '7-zip-populate'
+[7/7] Completed '7-zip-populate'
+-- 7-zip source code available at C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/7-zip-src
+-- CPM: Adding package ghc_filesystem@0 (983650f374699e3979f9cdefe13ddff60bd4ac68)
+-- Populating ghc_filesystem
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-subbuild
+[0/7] Performing update step for 'ghc_filesystem-populate'
+-- Already at requested ref: 983650f374699e3979f9cdefe13ddff60bd4ac68
+[1/7] No patch step for 'ghc_filesystem-populate'
+[3/7] No configure step for 'ghc_filesystem-populate'
+[4/7] No build step for 'ghc_filesystem-populate'
+[5/7] No install step for 'ghc_filesystem-populate'
+[6/7] No test step for 'ghc_filesystem-populate'
+[7/7] Completed 'ghc_filesystem-populate'
+-- ghc::filesystem source code available at C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug/_deps/ghc_filesystem-src
+-- Enable sanitizers: OFF
+-- Configuring done (2.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/kwaku/CLionProjects/AC-Mod-Installer/cmake-build-debug
